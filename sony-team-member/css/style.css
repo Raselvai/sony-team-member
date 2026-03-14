@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Clarendon';
+    src: url('../webfonts/Clarxndon-Regular.eot');
+    src: url('../webfonts/Clarxndon-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/Clarxndon-Regular.woff2') format('woff2'),
+        url('../webfonts/Clarxndon-Regular.woff') format('woff'),
+        url('../webfonts/Clarxndon-Regular.ttf') format('truetype'),
+        url('../webfonts/Clarxndon-Regular.svg#Clarxndon-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+  background: #122327;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+	max-width: 1230px !important;
+}
+
+.sony_wrapper {
+	padding: 80px 0;
+}
+
+.sony_wrapper h2 {
+    font-size: 45px;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Clarendon';
+}
+
+.sony_wrapper h2 span {
+		color: #48bbfa;
+		text-transform: uppercase;
+}
+
+.sony_wrapper .sony_item {
+    margin-top: 30px;
+    background: #172A2F;
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sony_wrapper .sony_item figure {
+	  width: 100%;
+	  height: 100%;
+	  overflow: hidden;
+	  position: relative;
+}
+
+.sony_wrapper .sony_item figure img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  transition: 0.4s all ease-in-out;
+}
+
+.sony_wrapper .sony_item figure ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 105%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 25px 0;
+    transition: 0.7s all ease-in-out;
+    background: linear-gradient(180deg, rgba(28, 45, 49, 0) 66.29%, #1C2D31 98%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sony_wrapper .sony_item:hover figure ul {
+	  visibility: visible;
+	  opacity: 1;
+	  top: 0;
+}
+
+.sony_wrapper .sony_item figure ul li {
+	  display: inline-block;
+}
+
+.sony_wrapper .sony_item figure ul li a {
+		width: 40px;
+		height: 40px;
+		background: #FFFFFF26;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		color: #ffffff;
+		margin: 0 4px;
+		transition: 0.4s all ease-in-out;
+}
+
+.sony_wrapper .sony_item figure ul li a:hover {
+	  text-decoration: none;
+	  background: #48bbfa;
+}
+
+.sony_wrapper .sony_item .sony_content {
+    padding: 30px 5px;
+    text-align: center;
+}
+
+.sony_wrapper .sony_item .sony_content h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.sony_wrapper .sony_item .sony_content h3 a {
+	  color: #ffffff;
+	  text-decoration: none;
+	  transition: 0.4s all ease-in-out;
+}
+
+.sony_wrapper .sony_item .sony_content h3 a:hover {
+	  color: #48bbfa;
+}
+
+.sony_wrapper .sony_item .sony_content p {
+    font-size: 14px;
+    margin: 0;
+    color: #48bbfa;
+}
